@@ -1,0 +1,73 @@
+body{
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  padding: 50px;
+}
+
+.hwdata{
+  margin-bottom: 0;
+}
+
+/* Cards */
+.card{
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+  transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+  padding: 14px 80px 18px 36px;
+  cursor: pointer;
+}
+.card:hover{
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+.card h3{
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+.card desc{
+  color: gray;
+}
+.card-img{
+  background-image: url(http://www.icosky.com/icon/png/Hardware/Vista%20Hardware%20Devices/Hardware%20Chip.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 128px;
+}
+@media(max-width: 990px){
+  .card{
+    margin: 20px;
+  }
+}
+
+/* container horizontal cards */
+.fancy-card-container {
+  width: 90%;
+  overflow-x: scroll;
+  display: flex;
+  padding: 3rem;
+  -ms-overflow-style: none; /* hide scrollbar for IE and Edge */
+  scrollbar-width: none;    /* hide scrollbar for Firefox */
+}
+.fancy-card-container::-webkit-scrollbar{
+  display: none;            /* hide scrollbar for Chrome */
+}
+.fancy-card {
+  min-width: 200px;
+  height: 250px;
+  border-radius: 16px;
+  background-color: #ffffff;
+  box-shadow: -1rem 0 3rem rgb(210, 210, 211);
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  transition: 0.2s;
+}
+.fancy-card:not(:first-child) {
+  margin-left: -130px;
+}
+.fancy-card:hover {
+  transform: translateY(-1rem);
+}
+.fancy-card:hover~.fancy-card{
+  transform: translateX(130px);
+}

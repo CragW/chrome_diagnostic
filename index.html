@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8"/>
+	<link rel="manifest" href="manifest.json"/>
+	<link rel="stylesheet" href="styles.css"/>
+	<link rel="icon" href="diag_icon.png" type="image/x-icon"/>
+	<link rel="icon" href="diag_icon.png" type="image/x-icon"/>
+	<title>Chrome OS Diagnostic Management (PWA)</title>
+</head>
+
+<body id="body">
+	<script src="/script.js"></script>
+
+	<div class="container">
+		<div class="card">
+			<div class="card-img">
+				<h3>CPU</h3>
+				<desc>Hardware information</desc>
+				<li>Architecture name of the processors:<span class="hwdata" id="archName"></span></li>
+				<li>Processor's capabilities:<span class="hwdata" id="features"></span></li>
+				<li>Model name of the processors:<span class="hwdata" id="modelName"></span></li>
+				<li>Number of logical processors:<span class="hwdata" id="numOfProcessors"></span></li>
+				<div class="fancy-card-container" id="wrapper-cpu"></div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-img">
+				<h3>Memory</h3>
+				<desc>Hardware information</desc>
+				<li>The amount of available capacity, in bytes:<span class="hwdata" id="availableCapacity"></span>
+				</li>
+				<li>The total amount of physical memory capacity, in bytes:<span class="hwdata" id="capacity"></span>
+				</li>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-img">
+				<h3>Storage</h3>
+				<desc>Hardware information</desc>
+				<div class="fancy-card-container" id="wrapper-storage"></div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
